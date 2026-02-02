@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: ; */
+}
+
+body{
+    background-color:#0f172a;
+    color: white;
+}
+
+h1{
+    color:#38bdf8;
+    text-align: center;
+}
+
+h2{
+    color: #a0d8f1;
+}
+
+.skills-container{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* background-color: #111116; */
+    /* height: 100vh; */
+    align-items: center;
+    text-align: center;
+    
+}
+
+.skills-container .progress{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    color: white;
+    background: #0f172a linear-gradient(to right, transparent 50%, var(--clr) 0);
+}
+
+.skills-container .progress h3{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size:2.5em;
+    z-index: 1;
+    font-weight: 500;
+}
+
+
+.themes{
+    margin-bottom: 10%;
+}
