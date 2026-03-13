@@ -1,5 +1,6 @@
 import buttonAdd from "./components/boutonTheme.js"
 import buttonAddSkill from "./components/boutonSkill.js";
+import { API_BASE_URL } from "./api.js";
 
 const root = document.getElementById("root")
 
@@ -9,7 +10,7 @@ async function getData(){
     root.innerHTML = ''
 
     try {
-        const res = await fetch("http://localhost:4242/themes");
+        const res = await fetch(`${API_BASE_URL}/themes`);
         const data = await res.json();
         console.log(data)
 
