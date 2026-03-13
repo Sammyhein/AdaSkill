@@ -31,6 +31,10 @@ const sql = neon(`${process.env.DATABASE_URL}`)
 app.use(cors())
 app.use(express.json());
 
+app.use(cors({
+  origin: "https://ada-skill.vercel.app" // l'URL exacte de ton front
+}))
+
 app.get('/', async (_, res) => {
   const response = await sql`SELECT * FROM themes`;;
   res.json(response);
