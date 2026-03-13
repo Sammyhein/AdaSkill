@@ -1,10 +1,11 @@
+import { API_BASE_URL } from "../api"
 export default function buttonAdd(button, input, upload){
 
     async function postData(e) {
         e.preventDefault()
 
         try {
-        await fetch("http://localhost:4242/theme", {method:"POST", headers:{"Content-Type":"application/json"},body:JSON.stringify({name:input.value})})
+        await fetch(`${API_BASE_URL}/theme`, {method:"POST", headers:{"Content-Type":"application/json"},body:JSON.stringify({name:input.value})})
         
         console.log("POST envoyé avec succès !")
 s 
