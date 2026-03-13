@@ -1,1 +1,1 @@
-export const API_BASE_URL = "https://ada-skill.vercel.app"
+export const API_BASE_URL = "https://ada-skill-back.vercel.app"
