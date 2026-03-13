@@ -1,6 +1,6 @@
-import buttonAdd from "./components/boutonTheme.js"
-import buttonAddSkill from "./components/boutonSkill.js";
-import { API_BASE_URL } from "./api.js";
+import buttonAdd from "../src/components/boutonTheme.js"
+import buttonAddSkill from "../src/components/boutonSkill.js";
+import { API_BASE_URL } from "../src/api";
 
 const root = document.getElementById("root")
 
